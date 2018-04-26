@@ -1,0 +1,17 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import controllers.WinnerPane?>
+
+<WinnerPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.WinnerPane"
+            prefHeight="400.0" prefWidth="600.0">
+    <Pane prefHeight="350.0" prefWidth="410.0" style="-fx-background-color: #bcbcbc;">
+        <Label fx:id="fNameLabel" text="First Name" layoutX="75" layoutY="95"/>
+        <Label fx:id="lNameLabel" text="Last Name" layoutX="75" layoutY="155"/>
+        <TextField fx:id="fNameTxtFld" layoutX="180" layoutY="90"/>
+        <TextField fx:id="lNameTxtFld" layoutX="180" layoutY="150"/>
+        <Button fx:id="submit" text="Submit" onAction="#clickSubmitButton" prefWidth="60.0" layoutX="120" layoutY="235"/>
+        <Button fx:id="clear" text="Clear" onAction="#clickClearButton" prefWidth="60.0" layoutX="240" layoutY="235"/>
+    </Pane>
+</WinnerPane>
